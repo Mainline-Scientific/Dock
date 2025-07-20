@@ -15,7 +15,9 @@
   </Design.PreviewWith>
 
 
-  <ContextMenu x:Key="DocumentTabStripItemContextMenu">
+  <ContextMenu x:Key="DocumentTabStripItemContextMenu"
+               IsEnabled="false"
+               IsVisible="false">
     <MenuItem Header="{DynamicResource DocumentTabStripItemFloatString}"
               Command="{Binding Owner.Factory.FloatDockable}"
               CommandParameter="{Binding}">

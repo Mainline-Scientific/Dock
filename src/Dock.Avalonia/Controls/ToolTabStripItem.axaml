@@ -18,7 +18,9 @@
   <x:Double x:Key="TabStripItemPipeThickness">2</x:Double>
 
 
-  <ContextMenu x:Key="ToolTabStripItemContextMenu">
+  <ContextMenu x:Key="ToolTabStripItemContextMenu"
+               IsEnabled="false"
+               IsVisible="false">
     <MenuItem Header="{DynamicResource ToolTabStripItemFloatString}"
               Command="{Binding Owner.Factory.FloatDockable}"
               CommandParameter="{Binding}">
